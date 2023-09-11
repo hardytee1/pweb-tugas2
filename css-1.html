@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+<style>
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        color :darkred;
+    }
+    p.double {
+        border-style: double;
+        border-color: rebeccapurple;
+    }
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  margin-top: 150px;
+  margin-left: 200px;
+  border-radius: 200px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.circle2 {
+    width: 20px;
+  height: 20px;
+  background-color: green;
+  margin-top: -20px;
+  margin-left: 170px;
+  border-radius: 200px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {  
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p class="double">This is a paragraph.</p>
+<div></div>
+
+</body>
+</html>
